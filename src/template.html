@@ -3,18 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>to-do list</title>
 </head>
 <body>
-<header>
-    <nav>
-        <button class="home">home</button>
-        <button class ="menu">menu</button>
-        <button class = "about">about</button>
-    </nav>
-</header>
+
 
 <div id="content">
+    <div class="side-bar">
+        <input type="text" id="new-category" >
+        <button class="add-category">add category</button>
+        <div id="categories">
+            <div>miscellaneous</div>
+        </div>
+    </div>
+    <div class="main-bar">
+        <header>
+            <h1>Todoer</h1>
+            <p>A simple to-do web app made as an exercise on the "TOP" platform
+                <p>*features:
+                adding-removing-editing categories and to-dos
+                localstorage,hide-unhide categories</p>
+                *missing features: 
+                  icons,styling and all things css related
+                  sorting to-dos by priority,date etc...
+            </p>
+        </header>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <td><input type="text" id="to-do" ></td>
+                        <td>
+                            <select name="text" id="priority">
+                                <option value="High">High</option>
+                                <option value="Normal" selected>Normal</option>
+                                <option value="Low">Low</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="text" id="category">
+                                <option value="miscellaneous">miscellaneous</option>                                
+                            </select>
+                        </td>
+                        <td>
+                            <input type = "date" id="deadline">
+                            
+                        </td>  
+                        <td><button class = "add-item">+</button></td>
+                        <td><button class = "show-history">H</button></td>
+                        <td><button class = "show-active">T</button></td>
+            </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
       
 </div>
 </body>

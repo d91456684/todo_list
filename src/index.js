@@ -1,22 +1,7 @@
 import "./styles.css";
 
-import { generateHome } from "../src/home";
-import { generateAbout } from "../src/about";
-import { generateMenu } from "../src/menu";
-generateHome()
+import eventListener from "./eventlistener.js"
 
-addEventListener("click", (event) => {
-    let target = event.target
-    console.log(target)
-    switch(target.className) {
-        case "home":
-            generateHome()
-            break;
-        case "menu":
-            generateMenu()
-            break;
-        case "about":
-            generateAbout()
-            break;
-    }
-})
+import { executeStorage } from "./storage.js";
+
+executeStorage()
